@@ -1,0 +1,53 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="Boy And Girl Ninja"
+run/main_scene="res://Sahneler/Deneme_Sahnesi_Araba.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/height=768
+
+[global]
+
+collision=false
+
+[layer_names]
+
+2d_physics/layer_1="platform"
+2d_physics/layer_2="player"
+2d_physics/layer_3="box"
+2d_physics/layer_4="spike"
+2d_physics/layer_5="saw"
+2d_physics/layer_6="health_box"
+2d_physics/layer_7="stairs"
+2d_physics/layer_8="enemy"
+2d_physics/layer_9="platform_end"
+2d_physics/layer_10="attack_to_enemy_area"
+2d_physics/layer_11="kunai_player"
+2d_physics/layer_12="attack_to_player_area"
+2d_physics/layer_13="kunai_enemy"
+2d_physics/layer_14="button"
+2d_physics/layer_15="finish"
+2d_physics/layer_16="car"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"

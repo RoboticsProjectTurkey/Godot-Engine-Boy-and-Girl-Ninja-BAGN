@@ -1,0 +1,173 @@
+[gd_scene load_steps=95 format=2]
+
+[ext_resource path="res://Eklentiler/Player/Idle__001.png" type="Texture" id=1]
+[ext_resource path="res://Eklentiler/Player/Idle__000.png" type="Texture" id=2]
+[ext_resource path="res://Eklentiler/Player/Idle__002.png" type="Texture" id=3]
+[ext_resource path="res://Eklentiler/Player/Idle__003.png" type="Texture" id=4]
+[ext_resource path="res://Eklentiler/Player/Idle__006.png" type="Texture" id=5]
+[ext_resource path="res://Eklentiler/Player/Run__004.png" type="Texture" id=6]
+[ext_resource path="res://Eklentiler/Player/Run__008.png" type="Texture" id=7]
+[ext_resource path="res://Eklentiler/Player/Run__009.png" type="Texture" id=8]
+[ext_resource path="res://Eklentiler/Player/Run__003.png" type="Texture" id=9]
+[ext_resource path="res://Eklentiler/Player/Idle__004.png" type="Texture" id=10]
+[ext_resource path="res://Eklentiler/Player/Idle__007.png" type="Texture" id=11]
+[ext_resource path="res://Eklentiler/Player/Run__006.png" type="Texture" id=12]
+[ext_resource path="res://Eklentiler/Player/Idle__008.png" type="Texture" id=13]
+[ext_resource path="res://Eklentiler/Player/Idle__009.png" type="Texture" id=14]
+[ext_resource path="res://Eklentiler/Player/Run__002.png" type="Texture" id=15]
+[ext_resource path="res://Eklentiler/Player/Idle__005.png" type="Texture" id=16]
+[ext_resource path="res://Eklentiler/Player/Run__000.png" type="Texture" id=17]
+[ext_resource path="res://Eklentiler/Player/Run__001.png" type="Texture" id=18]
+[ext_resource path="res://Eklentiler/Player/Run__005.png" type="Texture" id=19]
+[ext_resource path="res://Eklentiler/Player/Run__007.png" type="Texture" id=20]
+[ext_resource path="res://Eklentiler/Player/Jump__005.png" type="Texture" id=21]
+[ext_resource path="res://Eklentiler/Player/Jump__008.png" type="Texture" id=22]
+[ext_resource path="res://Eklentiler/Player/Jump__000.png" type="Texture" id=23]
+[ext_resource path="res://Eklentiler/Player/Jump__006.png" type="Texture" id=24]
+[ext_resource path="res://Eklentiler/Player/Jump__002.png" type="Texture" id=25]
+[ext_resource path="res://Eklentiler/Player/Jump__003.png" type="Texture" id=26]
+[ext_resource path="res://Eklentiler/Player/Jump__004.png" type="Texture" id=27]
+[ext_resource path="res://Eklentiler/Player/Jump__007.png" type="Texture" id=28]
+[ext_resource path="res://Eklentiler/Player/Jump__001.png" type="Texture" id=29]
+[ext_resource path="res://Eklentiler/Player/Jump__009.png" type="Texture" id=30]
+[ext_resource path="res://Kodlar/Player.gd" type="Script" id=31]
+[ext_resource path="res://Eklentiler/Player/Climb_004.png" type="Texture" id=32]
+[ext_resource path="res://Eklentiler/Player/Climb_001.png" type="Texture" id=33]
+[ext_resource path="res://Eklentiler/Player/Climb_002.png" type="Texture" id=34]
+[ext_resource path="res://Eklentiler/Player/Climb_003.png" type="Texture" id=35]
+[ext_resource path="res://Eklentiler/Player/Climb_000.png" type="Texture" id=36]
+[ext_resource path="res://Eklentiler/Player/Climb_006.png" type="Texture" id=37]
+[ext_resource path="res://Eklentiler/Player/Climb_005.png" type="Texture" id=38]
+[ext_resource path="res://Eklentiler/Player/Climb_007.png" type="Texture" id=39]
+[ext_resource path="res://Eklentiler/Player/Climb_008.png" type="Texture" id=40]
+[ext_resource path="res://Eklentiler/Player/Climb_009.png" type="Texture" id=41]
+[ext_resource path="res://Eklentiler/Player/Dead__001.png" type="Texture" id=42]
+[ext_resource path="res://Eklentiler/Player/Dead__000.png" type="Texture" id=43]
+[ext_resource path="res://Eklentiler/Player/Dead__005.png" type="Texture" id=44]
+[ext_resource path="res://Eklentiler/Player/Dead__009.png" type="Texture" id=45]
+[ext_resource path="res://Eklentiler/Player/Dead__004.png" type="Texture" id=46]
+[ext_resource path="res://Eklentiler/Player/Dead__003.png" type="Texture" id=47]
+[ext_resource path="res://Eklentiler/Player/Dead__002.png" type="Texture" id=48]
+[ext_resource path="res://Eklentiler/Player/Dead__007.png" type="Texture" id=49]
+[ext_resource path="res://Eklentiler/Player/Dead__008.png" type="Texture" id=50]
+[ext_resource path="res://Eklentiler/Player/Dead__006.png" type="Texture" id=51]
+[ext_resource path="res://Eklentiler/Player/Slide__006.png" type="Texture" id=52]
+[ext_resource path="res://Eklentiler/Player/Slide__001.png" type="Texture" id=53]
+[ext_resource path="res://Eklentiler/Player/Slide__003.png" type="Texture" id=54]
+[ext_resource path="res://Eklentiler/Player/Slide__004.png" type="Texture" id=55]
+[ext_resource path="res://Eklentiler/Player/Slide__000.png" type="Texture" id=56]
+[ext_resource path="res://Eklentiler/Player/Slide__002.png" type="Texture" id=57]
+[ext_resource path="res://Eklentiler/Player/Slide__005.png" type="Texture" id=58]
+[ext_resource path="res://Eklentiler/Player/Slide__008.png" type="Texture" id=59]
+[ext_resource path="res://Eklentiler/Player/Slide__009.png" type="Texture" id=60]
+[ext_resource path="res://Eklentiler/Player/Slide__007.png" type="Texture" id=61]
+[ext_resource path="res://Sahneler/attack_to_enemy_area.tscn" type="PackedScene" id=62]
+[ext_resource path="res://Eklentiler/Player/Throw__001.png" type="Texture" id=63]
+[ext_resource path="res://Eklentiler/Player/Throw__000.png" type="Texture" id=64]
+[ext_resource path="res://Eklentiler/Player/Throw__008.png" type="Texture" id=65]
+[ext_resource path="res://Eklentiler/Player/Throw__009.png" type="Texture" id=66]
+[ext_resource path="res://Eklentiler/Player/Throw__007.png" type="Texture" id=67]
+[ext_resource path="res://Eklentiler/Player/Throw__002.png" type="Texture" id=68]
+[ext_resource path="res://Eklentiler/Player/Throw__005.png" type="Texture" id=69]
+[ext_resource path="res://Eklentiler/Player/Throw__003.png" type="Texture" id=70]
+[ext_resource path="res://Eklentiler/Player/Throw__004.png" type="Texture" id=71]
+[ext_resource path="res://Eklentiler/Player/Throw__006.png" type="Texture" id=72]
+[ext_resource path="res://Eklentiler/Player/Attack__004.png" type="Texture" id=73]
+[ext_resource path="res://Eklentiler/Player/Attack__009.png" type="Texture" id=74]
+[ext_resource path="res://Eklentiler/Player/Attack__006.png" type="Texture" id=75]
+[ext_resource path="res://Eklentiler/Player/Attack__007.png" type="Texture" id=76]
+[ext_resource path="res://Eklentiler/Player/Attack__002.png" type="Texture" id=77]
+[ext_resource path="res://Eklentiler/Player/Jump_Attack__001.png" type="Texture" id=78]
+[ext_resource path="res://Eklentiler/Player/Attack__003.png" type="Texture" id=79]
+[ext_resource path="res://Eklentiler/Player/Jump_Attack__002.png" type="Texture" id=80]
+[ext_resource path="res://Eklentiler/Player/Jump_Attack__004.png" type="Texture" id=81]
+[ext_resource path="res://Eklentiler/Player/Attack__001.png" type="Texture" id=82]
+[ext_resource path="res://Eklentiler/Player/Jump_Attack__000.png" type="Texture" id=83]
+[ext_resource path="res://Eklentiler/Player/Attack__008.png" type="Texture" id=84]
+[ext_resource path="res://Eklentiler/Player/Jump_Attack__003.png" type="Texture" id=85]
+[ext_resource path="res://Eklentiler/Player/Attack__005.png" type="Texture" id=86]
+[ext_resource path="res://Eklentiler/Player/Attack__000.png" type="Texture" id=87]
+[ext_resource path="res://Eklentiler/Player/Jump_Attack__005.png" type="Texture" id=88]
+[ext_resource path="res://Eklentiler/Player/Jump_Attack__009.png" type="Texture" id=89]
+[ext_resource path="res://Eklentiler/Player/Jump_Attack__007.png" type="Texture" id=90]
+[ext_resource path="res://Eklentiler/Player/Jump_Attack__008.png" type="Texture" id=91]
+[ext_resource path="res://Eklentiler/Player/Jump_Attack__006.png" type="Texture" id=92]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 120.0
+height = 200.0
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 10 ), ExtResource( 16 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 18 ), ExtResource( 15 ), ExtResource( 9 ), ExtResource( 6 ), ExtResource( 19 ), ExtResource( 12 ), ExtResource( 20 ), ExtResource( 7 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "Run",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 36 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 32 ), ExtResource( 38 ), ExtResource( 37 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ) ],
+"loop": true,
+"name": "Climb",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 43 ), ExtResource( 42 ), ExtResource( 48 ), ExtResource( 47 ), ExtResource( 46 ), ExtResource( 44 ), ExtResource( 51 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 45 ) ],
+"loop": true,
+"name": "Dead",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 83 ), ExtResource( 78 ), ExtResource( 80 ), ExtResource( 85 ), ExtResource( 81 ), ExtResource( 88 ), ExtResource( 92 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 89 ) ],
+"loop": true,
+"name": "jump_attack",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 56 ), ExtResource( 53 ), ExtResource( 57 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 58 ), ExtResource( 52 ), ExtResource( 61 ), ExtResource( 59 ), ExtResource( 60 ) ],
+"loop": true,
+"name": "Slide",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 23 ), ExtResource( 29 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 21 ), ExtResource( 24 ), ExtResource( 28 ), ExtResource( 22 ), ExtResource( 30 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 87 ), ExtResource( 82 ), ExtResource( 77 ), ExtResource( 79 ), ExtResource( 73 ), ExtResource( 86 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 84 ), ExtResource( 74 ) ],
+"loop": true,
+"name": "knife_attack",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 64 ), ExtResource( 63 ), ExtResource( 68 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 69 ), ExtResource( 72 ), ExtResource( 67 ), ExtResource( 65 ), ExtResource( 66 ) ],
+"loop": true,
+"name": "throw",
+"speed": 20.0
+} ]
+
+[node name="Player" type="KinematicBody2D"]
+collision_layer = 2
+collision_mask = 63741
+script = ExtResource( 31 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+animation = "Idle"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 5, 5 )
+smoothing_enabled = true
+
+[node name="attack_to_enemy_area" parent="." instance=ExtResource( 62 )]
+position = Vector2( 2, 0 )
+
+[node name="Muzzle" type="Position2D" parent="."]
+
+[node name="kunai_timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="kunai_timer" to="." method="_on_kunai_timer_timeout"]

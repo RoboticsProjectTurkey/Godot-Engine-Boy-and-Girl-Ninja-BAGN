@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Eklentiler/Tileset/Objects/Kunai.png" type="Texture" id=1]
+[ext_resource path="res://Kodlar/kunai.gd" type="Script" id=2]
+
+[node name="kunai_player" type="Area2D"]
+collision_layer = 1024
+collision_mask = 156
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -80.8873, -3.22325, -72.9503, -10.9618, -64.0212, -11.5571, -57.6716, -5.80277, -19.1771, -6.19962, -7.46999, -15.1288, -4.69204, -15.3272, 80.4324, -0.445292, 80.6308, 0.745259, -4.4936, 15.6271, -7.27155, 15.6271, -20.7645, 4.91219, -56.8778, 4.71376, -62.4337, 11.0634, -70.1723, 11.6586, -77.514, 7.29329, -80.8873, 4.51534 )
+
+[connection signal="area_entered" from="." to="." method="_on_kunai_player_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_kunai_body_entered"]
